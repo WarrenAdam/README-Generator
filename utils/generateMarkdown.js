@@ -77,4 +77,4 @@ function generateMarkdown(data) {
   - GitHub: [${data.github}](https://github.com/${data.github})`;
 }
 
-module.exports = generateMarkdown;
+module.exports = generateMarkdown();

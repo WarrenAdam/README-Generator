@@ -7,25 +7,58 @@ inquirer
   .prompt([
     {
       type: 'input',
-      message: 'What is your user name?',
+      message: 'What is your Github username?',
       name: 'username',
     },
+
     {
-      type: 'password',
-      message: 'What is your password?',
-      name: 'password',
+      type: 'input',
+      message: 'What is your email?',
+      name: 'email',
+    },
+
+    {
+      type: 'input',
+      message: 'What is your project name?',
+      name: 'project name',
     },
     {
-      type: 'password',
-      message: 'Re-enter password to confirm:',
-      name: 'confirm',
+      type: 'input',
+      message: 'Please write a short description about your project.',
+      name: 'description',
+    },
+    
+    {
+      type: 'list',
+      message: 'What is your preferred method of communication?',
+      name: 'license',
+      choices: ['MIT', 'APACHE 2.0', 'GPL 3.0', 'BSD 3', 'none'],
+    },
+    {
+      type: 'input',
+      message: 'what command do you use to install dependencies? (npm install)',
+      name: 'dependency',
+    },
+    
+    {
+      type: 'input',
+      message: 'what command do you use to tests? (npm run test)',
+      name: 'test',
+    },
+    
+    {
+      type: 'input',
+      message: 'what does the user need to know about your repository?',
+      name: 'repository info',
+    },
+
+    {
+      type: 'input',
+      message: 'what does the user need to know about contributing to your repository?',
+      name: 'Contribution',
     },
   ])
-  .then((response) =>
-    response.confirm === response.password
-      ? console.log('Success!')
-      : console.log('You forgot your password already?!')
-  );
+  
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {}

@@ -1,6 +1,7 @@
 # README-Generator
 
 ## Description
+The README generator is designed to create a professional README markdown after the user answers a series of questions. The generator is a backend application using Node.Js to submit commands to be added to the README generator.
 
 ## User Story
 The following user story was adapted from the bootcamp challenge #9 website.
@@ -24,3 +25,10 @@ WHEN I enter my email address
 THEN this is added to the section of the README entitled Questions, with instructions on how to reach me with additional questions
 WHEN I click on the links in the Table of Contents
 THEN I am taken to the corresponding section of the README
+
+## Screenshot
+/Users/adam/Bootcamp/Challenges/Challenge-9/README-Generator/assets/images/README.png
+## Demo
+https://watch.screencastify.com/v/bMX7eaF0dddqcOMphQ2G
+## Deployment Link
+https://warrenadam.github.io/README-Generator/
